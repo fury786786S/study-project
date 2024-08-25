@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+         h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(36, 35, 35);
+            color:  rgb(134, 142, 142);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav a {
+            color: rgb(134, 142, 142);
+        }
+        footer {
+            height: 35vh;
+            color: white;
+        }
+        .border {
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        .details {
+            margin-left: 700px;
+        }
+        .filter {
+            margin-left: 630px;
+            
+        }
+        .border-1 {
+            border-radius: 5px;
+        }
+        .bi-x-lg {
+            font-size: 12px;
+            font-weight: bold;
+        }
+        button {
+            font-size: 15px;
+        }
+        .bi-eye-fill {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <header>
+        <h1 class="mt-5 mb-4 fs-3">Aducation</h1>
+        <nav class="mb-3">
+            <div class="ms-4 mt-2">
+                <a href="../1Asignment.html" class="text-decoration-none"><span class="bi bi-house-door-fill mx-2">Home</span></a>
+                <a href="../about.html" class="text-decoration-none"><span class="bi bi-question-circle mx-2">About</span></a>
+                <a href="../service.html" class="text-decoration-none"><span class="bi bi-question-circle mx-2">Service</span></a>
+                <a href="../contact.html" class="text-decoration-none"><span class="bi bi-phone-fill mx-2">Contact us</span></a>
+            </div>
+            <div class="me-4 dropdown" id="menu">
+                <button class=" btn btn-dark" data-bs-target="#menu" data-bs-toggle="dropdown"><span class="bi bi-box-arrow-in-right"></span>&nbsp;Sign in <span class="bi-caret-down-fill"></span></button>
+                <ul class="dropdown-menu ps-1">
+                    <li><a href="../sign-in.html" class="text-decoration-none"><span class="bi bi-box-arrow-in-right sign-in"></span>&nbsp;Sign in</a></li>
+                    <li><a href="../register.html" class="text-decoration-none"><span class="bi bi-person-add"></span>&nbsp;Sign up</a></li>
+                    <li><a href="../change-password.html" class="text-decoration-none"><span class="bi bi-unlock-fill d-inline"></span>&nbsp;Change Password</a></li>
+                </ul>
+            </div>
+    </header>
+    <section class="border mb-3 ">
+        <table width="100%"  cellpadding="10" frame="box" rules="groups" class="bg-info">
+            <thead>
+                <tr class="d-flex border  ">
+                    <th class="details">Details</th>
+                    <th class="filter"><a href=""><button class="border-1"><span class="bi bi-filter"></span>Filter</button></a></th>
+                </tr>
+            </thead>
+            <div class="table-responsive">
+                <table class="table table-striped mt-3 p-4 mb-3 " >
+                    <thead class="table-warning">
+                        <tr>
+                            <th>Id</th>
+                            <th>Course Name</th>
+                            <th>Faculty Name</th>
+                            <th>Duration</th>
+                            <th>Timings</th>
+                            <th>View</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Angular 8</td>
+                            <td>Sudhakar sharma sir</td>
+                            <td>45 days</td>
+                            <td>07:30 AM</td>
+                            <td><button class="btn btn-warning fs-7" data-bs-target="#angular" data-bs-toggle="modal">view <span class="bi bi-eye-fill"></span></button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Node Js</td>
+                            <td>Samba sir</td>
+                            <td>45 days</td>
+                            <td>09:00 AM</td>
+                            <td><button class="btn btn-warning fs-6" data-bs-target="#node" data-bs-toggle="modal">view <span class="bi bi-eye-fill"></span></button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Java</td>
+                            <td>Hari krishna sir</td>
+                            <td>60 days</td>
+                            <td>04:30 pM</td>
+                            <td><button class="btn btn-warning fs-6" data-bs-target="#java" data-bs-toggle="modal">view <span class="bi bi-eye-fill"></span></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </table>
+    </section>
+    <footer class="bg-dark">
+        <span class="service-footer-brand d-flex justify-content-center pt-4">Aducation </span>
+        <div class="d-flex justify-content-around mt-5">
+            <div>
+                <aside>
+                    <ul>
+                        <li><a href="https://www.facebook.com" class="text-decoration-none"><span class="bi bi-facebook"></span>Facebook</a></li>
+                        <li><a href="https://www.google.com/" class="text-decoration-none"><span class="bi bi-envelope-fill"></span>Google</a></li>
+                        <li><a href="https://twitter.com/" class="text-decoration-none"><span class="bi bi-twitter">Twitter</span></a></li>
+                        <li><a href="https://www.youtube.com/" class="text-decoration-none"><span class="bi bi-youtube"></span>Youtube</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="../1Asignment.html" class="text-decoration-none">Home</a></li>
+                    <li><a href="../about.html" class="text-decoration-none">About</a></li>
+                    <li><a href="../service.html" class="text-decoration-none">Serivce</a></li>
+                    <li><a href="../contact.html" class="text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <address>
+                    <ul>
+                        <li>Name : Aducation</li>
+                        <li> Email : info@Aducation.com</li>
+                        <li>Contact : +91-xxxxxxxxxx</li>
+                        <li>Address : Sr nagar, Hyderabad, Telangana, India</li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="angular">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Details :</h3>
+                    <button class=" btn btn-close"  data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                <form action="">
+                    <div >
+                       <div> <b>Course:</b></div>
+                       <div><span>Angular 8</span></div>
+                    </div>
+                    <div >
+                        <div> <b>Faculty:</b></div>
+                        <div><span>Sudhakar sharma sir</span></div>
+                     </div>
+                     <div >
+                        <div> <b>Durations:</b></div>
+                        <div><span>45 days</span></div>
+                     </div>
+                     <div >
+                        <div> <b>Timings:</b></div>
+                        <div><span>07:30 AM</span></div>
+                     </div>
+                     <div >
+                        <div> <b>Description:</b></div>
+                        <div><span>Angular 8 is a client-side TypeScript based framework which is used to create dynamic web applications. It is very similar to its previous versions except having some extensive features.</span></div>
+                     </div>
+                </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning fs-6"  data-bs-dismiss="modal"><span class="bi bi-x-lg"></span>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="node">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Details :</h3>
+                    <button class=" btn btn-close"  data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div >
+                           <div> <b>Course:</b></div>
+                           <div><span>Node Js</span></div>
+                        </div>
+                        <div >
+                            <div> <b>Faculty:</b></div>
+                            <div><span>Samba sir</span></div>
+                         </div>
+                         <div >
+                            <div> <b>Durations:</b></div>
+                            <div><span>45 days</span></div>
+                         </div>
+                         <div >
+                            <div> <b>Timings:</b></div>
+                            <div><span>09:00 AM</span></div>
+                         </div>
+                         <div >
+                            <div> <b>Description:</b></div>
+                            <div><span>Node.js connects the ease of a scripting language (JavaScript) with the power of Unix network programming. Node.js was built on the Google V8 JavaScript engine since it was open-sourced under the BSD license.</span></div>
+                         </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning fs-6"  data-bs-dismiss="modal"><span class="bi bi-x-lg"></span>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="java">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Details :</h3>
+                    <button class=" btn btn-close"  data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div >
+                           <div> <b>Course:</b></div>
+                           <div><span>Java</span></div>
+                        </div>
+                        <div >
+                            <div> <b>Faculty:</b></div>
+                            <div><span>Hari krishna sir</span></div>
+                         </div>
+                         <div >
+                            <div> <b>Durations:</b></div>
+                            <div><span>60 days</span></div>
+                         </div>
+                         <div >
+                            <div> <b>Timings:</b></div>
+                            <div><span>04:00 PM</span></div>
+                         </div>
+                         <div >
+                            <div> <b>Description:</b></div>
+                            <div><span>Java is an object-oriented programming language developed by Sun Microsystems, and it was released in 1995. ... Java Virtual Machine (JVM) executes Java code, but it has been written in platform-specific languages such as C/C++/ASM, etc</span></div>
+                         </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning fs-6"  data-bs-dismiss="modal"><span class="bi bi-x-lg"></span>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

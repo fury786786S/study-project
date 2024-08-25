@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+         h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(36, 35, 35);
+            color: rgb(134, 142, 142);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav a {
+            color: rgb(134, 142, 142);
+        }
+        footer {
+            height: 35vh;
+            color: white;
+        }
+        section {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            height: 50vh;
+        }
+        .border {
+            border-radius: 10px;
+        }
+        .contact  li {
+            padding: 10px;
+            margin-left: 190px;
+        }
+        .cont {
+            transition: 1.5s;
+        }
+        .cont:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <header>
+        <h1 class="mt-5 mb-4 fs-3">Aducation</h1>
+        <nav class="mb-3">
+            <div class="ms-4 mt-2">
+                <a href="../1Asignment.html" class="text-decoration-none"><span class="bi bi-house-door-fill mx-2">Home</span></a>
+                <a href="../about.html" class="text-decoration-none"><span class="bi bi-question-circle mx-2">About</span></a>
+                <a href="../service.html" class="text-decoration-none"><span class="bi bi-question-circle mx-2">Service</span></a>
+                <a href="../contact.html" class="text-decoration-none"><span class="bi bi-phone-fill mx-2">Contact us</span></a>
+            </div>
+            <div class="me-4 dropdown" id="menu">
+                <button class=" btn btn-dark" data-bs-target="#menu" data-bs-toggle="dropdown"><span class="bi bi-box-arrow-in-right"></span>&nbsp;Sign in <span class="bi-caret-down-fill"></span></button>
+                <ul class="dropdown-menu ps-1 p-2">
+                    <li><a href="../sign-in.html" class="text-decoration-none"><span class="bi bi-box-arrow-in-right sign-in"></span>&nbsp;Sign in</a></li>
+                    <li><a href="../register.html" class="text-decoration-none"><span class="bi bi-person-add"></span>&nbsp;Sign up</a></li>
+                    <li><a href="../change-password.html" class="text-decoration-none"><span class="bi bi-unlock-fill d-inline"></span>&nbsp;Change Password</a></li>
+                </ul>
+            </div>
+    </header>
+    <section >
+        <div class="contact">
+            <h2 class="fs-4 d-flex justify-content-center p-4">Contact Details</h2>
+            <ul>
+                <li><b>Name</b>: Aducation</li>
+                <li> <b>Email ID</b>: info@Aducation.com</li>
+                <li><b>Contact Number</b>: +91-xxxxxxxxxx</li>
+                <li><b>Address</b>: Hyderabad, India</li>
+            </ul>
+        </div>
+        <div class="cont">
+            <img src="../images/Contactus3.jpg" class="m-5 mb-2 border p-2" width="500" height="300">
+        </div>
+    </section>
+    <footer class="bg-dark  "  >
+        <span class="service-footer-brand d-flex justify-content-center pt-4">Aducation </span>
+        <div class="d-flex justify-content-around mt-5">
+            <div>
+                <aside>
+                    <ul>
+                        <li><a href="https://www.facebook.com" class="text-decoration-none"><span class="bi bi-facebook"></span>Facebook</a></li>
+                        <li><a href="https://www.google.com/" class="text-decoration-none"><span class="bi bi-envelope-fill"></span>Google</a></li>
+                        <li><a href="https://twitter.com/" class="text-decoration-none"><span class="bi bi-twitter">Twitter</span></a></li>
+                        <li><a href="https://www.youtube.com/" class="text-decoration-none"><span class="bi bi-youtube"></span>Youtube</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="../1Asignment.html" class="text-decoration-none">Home</a></li>
+                    <li><a href="../about.html" class="text-decoration-none">About</a></li>
+                    <li><a href="../service.html" class="text-decoration-none">Serivce</a></li>
+                    <li><a href="../contact.html" class="text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <address>
+                    <ul>
+                        <li>Name : Aducation</li>
+                        <li> Email : info@Aducation.com</li>
+                        <li>Contact : +91-xxxxxxxxxx</li>
+                        <li>Address : Sr nagar, Hyderabad, Telangana, India</li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

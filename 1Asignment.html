@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study.com</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(36, 35, 35);
+            color: rgb(134, 142, 142);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav a {
+            color: rgb(134, 142, 142);
+        }
+
+        .pac-1 {
+            background-color: orange;
+            color: white;
+            border-radius: 5px;
+            width: 300px;
+            padding: 5px;
+            margin-left: 600px;
+        }
+
+        .pac-2 {
+            background-color: aqua;
+            color: white;
+            width: 190px;
+            padding: 3px;
+            border-radius: 5px;
+            margin-left: 650px;
+        }
+
+        article p {
+            margin-left: 400px;
+        }
+
+        .line-1 {
+            border: 2px solid black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width: 500px;
+            margin-left: 950px;
+            
+        }
+
+        .coruse {
+            display: grid;
+            grid-template-columns: 8fr 4fr;
+        }
+        main {
+            background-color: blueviolet;
+            color: black;
+            padding-left: 10px;
+        }
+        .bi-laptop {
+            font-size: 50px;
+        }
+        .bi-wordpress {
+            font-size: 50px;
+        }
+        .bi-keyboard {
+            font-size: 50px;
+        }
+        .bi-file-earmark-word {
+            font-size: 50px;
+        }
+        .jobs {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        .title {
+            font-size: 18px;
+        }
+        main p {
+            font-size: 15px;
+        }
+        .first {
+            display: grid;
+            grid-template-columns: 9fr 3fr;
+        }
+        .line-2 {
+            border: 2px solid black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width: 500px;
+            margin-left: 20px;
+        }
+        .second {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        .line-3 {
+            border: 2px solid black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width: 500px;
+            margin-left: 950px;
+        }
+        .line-4 {
+            border: 2px solid black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width: 500px;
+            margin-left: 20px;
+        }
+        .third {
+            display: grid;
+            grid-template-columns: 9fr 3fr;
+        }
+        .four {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        .service-footer-brand {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+        .one {
+            text-align: center;
+            color: rgb(33, 169, 83);
+            font-size: 50px;
+        }
+        .two {
+            text-align: center;
+            color: rgb(13, 0, 255);
+            font-size: 50px;
+        }
+        .three {
+            text-align: center;
+            color: rgb(0, 238, 255);
+            font-size: 50px;
+        }
+        .fou {
+            text-align: center;
+            color: rgb(0, 238, 255);
+            padding: 5px;
+            font-size: 50px;
+        }
+        .details {
+            background-color: rgb(48, 74, 71);
+            color: black;
+        }
+        .service-head {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .service-1 {
+            background-image: url(../images/s1.jpg);
+            height: 200px;
+            width: 320px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-left: 30px;
+        }
+        .service-2 {
+            background-image: url(../images/s2.jpg);
+            height: 200px;
+            width: 500px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+        }
+        .service-3 {
+            background-image: url(../images/s3.png);
+            height: 200px;
+            width: 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-left: 50px;
+        }
+        .servic-body {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+        .border {
+            box-shadow: 4px 5px 5px 4px  black;
+            transition: 2s;
+        }
+        .border:hover {
+            transform: scale(0.9);
+        }
+        .details-head {
+            display: flex;
+            justify-content: center;
+        }
+        .bi-hourglass {
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .bi-circle {
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .bi-hand-thumbs-up {
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .bi-flag {
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .details-footer {
+            display: flex;
+            justify-content: center; 
+            margin-top: 20px; 
+            font-size: 10px;
+            padding-bottom: 20px;
+        }
+        .people {
+            margin-left: 110px;
+        }
+        .call {
+            background-color: aquamarine;
+        }
+        .zoom {
+            transition: 2s;
+        }
+        .zoom:hover {
+            transform: scale(1.1);
+        }
+        
+    </style>
+</head>
+
+<body class="container-fluid">
+    <header>
+        <h1 class="mt-5 mb-4">Aducation</h1>
+        <nav class="mb-3">
+            <div class="ms-4 mt-2">
+                <a href="../1Asignment.html" class="text-decoration-none"><span class="bi bi-house-door-fill mx-2">Home</span></a>
+                <a href="../about.html" class="text-decoration-none"><span class="bi bi-question-circle mx-2">About</span></a>
+                <a href="../service.html" class="text-decoration-none"><span class="bi bi-question-circle mx-2">Service</span></a>
+                <a href="../contact.html" class="text-decoration-none"><span class="bi bi-phone-fill mx-2">Contact us</span></a>
+            </div>
+            <div class="me-4 dropdown" id="menu">
+                <button class=" btn btn-dark" data-bs-target="#menu" data-bs-toggle="dropdown"><span class="bi bi-box-arrow-in-right"></span>&nbsp;Sign in <span class="bi-caret-down-fill"></span></button>
+                <ul class="dropdown-menu ps-1">
+                    <li><a href="../sign-in.html" class="text-decoration-none"><span class="bi bi-box-arrow-in-right sign-in"></span>&nbsp;Sign in</a></li>
+                    <li><a href="../register.html" class="text-decoration-none"><span class="bi bi-person-add"></span>&nbsp;Sign up</a></li>
+                    <li><a href="../change-password.html" class="text-decoration-none"><span class="bi bi-unlock-fill d-inline"></span>&nbsp;Change Password</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="carousel slide" id="banner" data-bs-ride="carousel">
+            <div class="carousel-inner mt-4">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="../images/f1.jpg" class="w-100 d-block" height="500">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../images/f2.jpg" class="w-100 d-block" height="500">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="../images/f3.jpg" class="w-100 d-block" height="500">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banner">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banner">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button class="active" data-bs-slide-to="0" data-bs-target="#banner"></button>
+                <button data-bs-slide-to="1" data-bs-target="#banner"></button>
+                <button data-bs-slide-to="2" data-bs-target="#banner"></button>
+            </div>
+        </div>
+        
+    </header>
+    <article class="d-grid justify-content-center mt-4">
+        <button class="pac-1">Show me what's in this package</button>
+        <button class="pac-2 mt-3">What is the package</button>
+        <p class="w-50 mt-2">* A package is a small container in which a quantity of something is sold. Packages are
+            either small boxes made of thin cardboard, or bags or envelopes made of paper or plastic. ... When a product
+            is packaged, it is put into containers to be sold.</p>
+    </article>
+    <div class="line-1 mt-5"></div>
+    <section>
+        <div class="coruse mt-5">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead align="center" class="table-danger">
+                        <tr>
+                            <th>Department</th>
+                            <th>Included</th>
+                        </tr>
+                    </thead>
+                    <tbody align="center">
+                        <tr>
+                            <td>M.Tech</td>
+                            <td><span class="bi bi-check-lg"></span></td>
+                        </tr>
+                        <tr>
+                            <td>B.Tech</td>
+                            <td><span class="bi bi-check-lg"></span></td>
+                        </tr>
+                        <tr>
+                            <td>MCA</td>
+                            <td><span class="bi bi-check-lg"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="zoom">
+                <img src="../images/f2.jpg" class="  w-75 ms-5" height="170">
+            </div>
+        </div>
+        <main class="mt-5">
+            <div >
+                <span class="jobs pt-4 pb-3">What is the job</span>
+                <div class="d-flex justify-content-between">
+                        <div>
+                        <div class="bi bi-keyboard"></div>
+                        <span class="title">Types of jobs</span>
+                           <p>Volcanologist. ...</p>
+                           <p>Quantum physicist. ...</p> 
+                            <p>Oceanographer. ...</p>
+                            <p>Biomedical engineer. ...</p>
+                        </div>
+                        <div>
+                        <div class="bi bi-file-earmark-word"></div>
+                        <span class="title">Define job profile</span>
+                        <p>Job profile developed by the <br>personnel department of a <br>business might include such things <br>as job responsibilities, required <br>qualifications, advancement <br>prospects.</p>
+                       </div>
+                        <div>
+                            <div class="bi bi-wordpress"></div>
+                                <span class="title">Job profile summary</span>
+                                <p>Profile summary is a summary of <br>your education, skills, career <br>experiences, and goals.</p>
+                        </div>
+                        <div>
+                        <div class="bi bi-laptop"></div>
+                        <span class="title">The IT skills</span>
+                        <p>Coding.</p>
+                        <p>Communication.</p>
+                        <p>Networks.</p>
+                        <p>Time Management.</p>
+                        <p>More Information Technology <br>Skills.</p>
+                    </div>
+                    <div>
+                        <div class="bi bi-laptop"></div>
+                        <span class="title"> Freshers key skills</span>
+                        <p>Communication.</p>
+                        <p>Ability to Work Under Pressure.</p>
+                        <p>Decision Making.</p>
+                        <p>Time Management.</p>
+                        <p>Self-motivation.</p>
+                        <p>Conflict Resolution.</p>
+                        <p>personal skills?<br>
+                            Leadership.</p>
+                        <p>Adaptability.</p>
+                    </div>
+                    <div>
+                        <div class="bi bi-laptop"></div>
+                        <span class="title">Personal skills </span>
+                        <p>A skill is the ability to do something</p> <p>well, a certain competence or</p> <p>proficiency. Skills are
+                            typically</p> <p>acquired or developed through</p> <p>direct experiences and training,</p> <p>and they can
+                                require sustained effort.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="mt-5">
+        <div class="first">
+            <div>
+                <div> <span class="one">1</span><b>Why do you want this job?</b></div>
+                <p>The hiring manager wants to: Learn about your career goals and how this position fits into your plan. Make sure that you are sincerely interested in the job and will be motivated to perform if hired. Find out what you know about the company, industry, position (and if you took the time to research).</p>
+            </div>
+            <div>
+                <img src="../images/ind1.jpg" class="w-75 px-4 py-4" height="200">
+            </div>
+        </div>
+        <div class="line-2 mt-2"></div>
+        <div class="second mt-2">
+            <div>
+                <img src="../images/ind2.png" class="w-75 px-4 py-4" height="200">
+            </div>
+            <div>
+                <div> <span class="two">2</span><b>What is a CV example?</b></div>
+                <p>A resume is a brief summary. ... If you were writing your resume you would include only the work information that relates specifically to the job you're applying for, but for a Curriculum Vitae, you would also include all your teaching experience, lab and field work..</p>
+            </div>
+        </div>
+        <div class="line-3 mt-2"></div>
+        <div class="third mt-2">
+            <div>
+                <div><span class="three">3</span><b>Do you need a resume for your first job?</b></div>
+                <p>When writing your first resume with no work experience, it's appropriate to include casual jobs like babysitting, pet sitting, lawn mowing, and shoveling snow. All experience counts and the way you present yourself, your skills, and your assets to a hiring manager begins with a strong resume.</p>
+            </div>
+            <div>
+                <img src="../images/ind3.png" class="w-75 py-4 px-4" height="200">
+            </div>
+        </div>
+        <div class="line-4 mt-2"></div>
+        <div class="four mt-2">
+            <div>
+                <img src="../images/ind4.jpg" class="w-75 py-4 px-4" height="200">
+            </div>
+            <div>
+                <div><span class="fou">4</span> <b>Why do you think you can do well in this job?</b></div>
+                <p>I believe I will do well in this job because I have the relevant skills and it is my field of interest. ... I have a confident that I can do well in the job because of self confidence, positive attitude. Previous success also brings self confidence for the future success.</p>
+            </div>
+        </div>
+    </section>
+    <div class="faq mt-4 mb-4 d-flex justify-content-center">
+        <button class="me-3 rounded call"  >Request call back</button>
+        <button class="rounded p-2">FAQ'S</button>
+    </div>
+    <section class="mt-4">
+        <div class="details ">
+            <span class=" details-head fs-5 mb-4 pt-4 ">Student Department Details</span>
+            <div class="d-flex justify-content-around">
+                <div>
+                    <span class=" bi bi-hourglass "></span><br>
+                    <span class="fs-6 ps-3">Average Salary Offered</span><br>
+                    <span class="fs-4">INR 7 L per annum</span><br>
+                    <span class="fs-5 ps-5">per annum</span>
+                </div>
+                <div>
+                    <span class="bi bi-circle "></span><br>
+                    <span>Duration</span><br>
+                    <span class="ps-3 fs-4">2</span><br>
+                    <span class="ps-2">years</span>
+                </div>
+                <div>
+                    <span class="bi bi-hand-thumbs-up"></span><br>
+                    <span class="ps-2">Average Fees Incurred</span><br>
+                    <span class="fs-4">INR 25,000 - 2 L</span><br>
+                    <span class="d-flex justify-content-center">per annum</span>
+                </div>
+                <div>
+                    <span class="bi bi-flag"></span><br>
+                    <span>Indian Institute of Technology, [IIT] Kanpur</span><br>
+                    <span class="fs-4 people">49,035</span><br>
+                    <span class="d-flex justify-content-center">Kanpur</span>
+                </div>
+            </div>
+            <span class="details-footer">* job: A group of homogeneous tasks related by similarity of functions.</span>
+        </div>
+        <div class="services mt-4 mb-5 ">
+            <span class="service-head">SERVICES</span>
+            <div class=" servic-body d-flex justify-content-between">
+                <div class="border border-2 me-3 p-3" >
+                    <div class="service-1 "></div>
+                    <h4 class="mt-5">WEB DESIGN !!</h4>
+                    <span>Online ordering system helps to maintain a Better Business Relationship with your customers, which is a key factor to run any successful business.</span>
+                </div>
+                <div class="border border-2 me-3 p-3 ">
+                    <div class="service-2"></div>
+                    <h4 class="mt-5">IT SERVICES !!</h4>
+                    <span>We are ideally located in Larbert meaning we can offer IT support to businesses throughout Scotland. We take the hassle and worry out of your IT system by providing preventative and proactive IT support.</span>
+                </div>
+                <div class="border border-2 p-3 ">
+                    <div class="service-3 "></div>
+                    <h4 class="mt-5">WEB MARKETING !!</h4>
+                    <span>We are passionate about digital content creation, strategy and delivery. We deliver results by designing marketing strategies which improve our clients brand visibility.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-5 text-bg-dark">
+        <span class="service-footer-brand">Aducation </span>
+        <div class="d-flex justify-content-around mt-3">
+            <div class="footer-site">
+                <aside>
+                    <ul>
+                        <li><a href="https://www.facebook.com" class="text-decoration-none text-bg-dark"><span class="bi bi-facebook"></span>Facebook</a></li>
+                        <li><a href="https://www.google.com/" class="text-decoration-none text-bg-dark"><span class="bi bi-envelope-fill"></span>Google</a></li>
+                        <li><a href="https://twitter.com/" class="text-decoration-none text-bg-dark"><span class="bi bi-twitter">Twitter</span></a></li>
+                        <li><a href="https://www.youtube.com/" class="text-decoration-none text-bg-dark"><span class="bi bi-youtube"></span>Youtube</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="footer-text">
+                <ul>
+                    <li><a href="../1Asignment.html" class="text-decoration-none text-bg-dark" >Home</a></li>
+                    <li><a href="../about.html" class="text-decoration-none text-bg-dark">About</a></li>
+                    <li><a href="../service.html" class="text-decoration-none text-bg-dark">Serivce</a></li>
+                    <li><a href="../contact.html" class="text-decoration-none text-bg-dark">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <address>
+                    <ul>
+                        <li>Name : Aducation</li>
+                        <li> Email : info@Aducation.com</li>
+                        <li>Contact : +91-xxxxxxxxxx</li>
+                        <li>Address : Sr nagar, Hyderabad, Telangana, India</li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
